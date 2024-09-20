@@ -26,7 +26,7 @@ X = iot_data[['temp', 'max', 'min', 'wdsp', 'dewp', 'slp', 'visib']]
 y = iot_data['significant_prcp']
 
 #podjela podataka na testne podatke i podatke za trening
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2) #random_state za reprodukciju istog ishoda
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
 #kreiranje Decision Tree Classifiera i treniranje istog
 model = DecisionTreeClassifier()
